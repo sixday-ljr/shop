@@ -1,0 +1,915 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.banner {
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  background-size: cover;
+  transition: opacity 0.5s;
+}
+.banner > img:nth-child(1) {
+  background: url(../images/img1.jpg) no-repeat;
+  background-size: cover;
+}
+.banner > img:nth-child(2) {
+  background: url(../images/img2.jpg) no-repeat;
+  background-size: cover;
+}
+.banner > img:nth-child(3) {
+  background: url(../images/img3.jpg) no-repeat;
+  background-size: cover;
+}
+.banner > img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.banner > a {
+  display: block;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 120px;
+  position: absolute;
+  font-size: 40px;
+  top: 36%;
+  display: none;
+  z-index: 3;
+}
+.banner > a.right {
+  right: 0;
+}
+.banner:hover > a {
+  display: block;
+}
+.banner .show {
+  opacity: 1;
+  z-index: 1;
+}
+.s-ohter {
+  border-bottom: 2px solid #ccc;
+}
+.s-inner,
+.p-inner,
+.swiper-inner,
+.price-inner,
+.more-inner,
+.holder-inner,
+.txt-inner,
+.shop-inner,
+.tet-inner,
+.ff-inner,
+.f-inner,
+.footer-inner {
+  width: 1111px;
+  margin: 0 auto;
+}
+.car {
+  width: 365px;
+  border-right: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 21px;
+  margin-bottom: 30px;
+  float: left;
+}
+.car > i {
+  padding-left: 49px;
+  font-size: 40px;
+  float: left;
+  margin-right: 21px;
+}
+.car > h6 {
+  font-size: 12px;
+  float: left;
+}
+.car > p {
+  color: #ccc;
+  font-size: 14px;
+}
+.card {
+  width: 378px;
+  border-right: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 21px;
+  margin-bottom: 30px;
+  float: left;
+}
+.card > i {
+  padding-left: 64px;
+  font-size: 40px;
+  float: left;
+  margin-right: 21px;
+}
+.card > h6 {
+  font-size: 12px;
+  float: left;
+}
+.card > p {
+  color: #ccc;
+  font-size: 14px;
+}
+.time {
+  width: 270px;
+  margin-top: 30px;
+  padding-top: 21px;
+  margin-bottom: 30px;
+  float: left;
+}
+.time > i {
+  padding-left: 65px;
+  font-size: 40px;
+  float: left;
+  margin-right: 21px;
+}
+.time > h6 {
+  font-size: 12px;
+  float: left;
+}
+.time > p {
+  color: #ccc;
+  font-size: 14px;
+}
+.people {
+  padding-top: 100px;
+}
+.women {
+  width: 357px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.women > img {
+  width: 357px;
+  height: 458px;
+  transition: all 2s;
+}
+.women:hover > img {
+  transform: scale(1.1, 1.1);
+}
+.women > h6 {
+  position: absolute;
+  left: 33px;
+  bottom: 84px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+.women > h3 {
+  position: absolute;
+  left: 33px;
+  bottom: 51px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+.children {
+  margin-left: 19px;
+  width: 357px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.children > img {
+  width: 357px;
+  height: 458px;
+  transition: all 2s;
+}
+.children:hover > img {
+  transform: scale(1.1, 1.1);
+}
+.children > h6 {
+  position: absolute;
+  left: 33px;
+  bottom: 84px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+.children > h3 {
+  position: absolute;
+  left: 33px;
+  bottom: 51px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+.men {
+  margin-left: 19px;
+  width: 357px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.men > img {
+  width: 357px;
+  height: 458px;
+  transition: all 2s;
+}
+.men:hover > img {
+  transform: scale(1.1, 1.1);
+}
+.men > h6 {
+  position: absolute;
+  left: 33px;
+  bottom: 84px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+.men > h3 {
+  position: absolute;
+  left: 33px;
+  bottom: 51px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+.text > h3 {
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 41px;
+  font-size: 36px;
+}
+.text > p {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 57px;
+}
+.container {
+  padding-bottom: 40px;
+  position: relative;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide > img {
+  width: 263px;
+  height: 384px;
+}
+.more {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #eef1f8;
+}
+.more-inner {
+  position: relative;
+}
+.more-inner > img {
+  width: 516px;
+  height: 553px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.more-inner > div {
+  width: 500px;
+}
+.more-inner > div > h5 {
+  font-size: 24px;
+  color: green;
+  padding-top: 172px;
+}
+.more-inner > div > h3 {
+  font-size: 48px;
+}
+.more-inner > div > p {
+  color: #ccc;
+  margin-top: 39px;
+}
+.more-inner > div > a {
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  line-height: 28px;
+  background-color: #3bb18f;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 36px;
+}
+.holder {
+  padding-bottom: 141px;
+  background-color: #eef1f8;
+}
+.cntSeparator {
+  display: block;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  width: 40px;
+}
+.digits {
+  padding-top: 20px;
+}
+.txt-inner > h5 {
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 41px;
+  font-size: 36px;
+}
+.txt-inner > p {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 57px;
+}
+.shop-inner {
+  margin-bottom: 71px;
+}
+.shop,
+.shoes {
+  width: 357px;
+  float: left;
+}
+.clock {
+  width: 357px;
+  float: right;
+}
+.shoes {
+  margin-left: 20px;
+}
+.shop > div {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.shop > div:nth-child(1) > img {
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.shop > div:nth-child(1) > div {
+  float: left;
+}
+.shop > div:nth-child(1) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shop > div:nth-child(1) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shop > div:nth-child(2) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.shop > div:nth-child(2) > div {
+  float: left;
+}
+.shop > div:nth-child(2) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shop > div:nth-child(2) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shop > div:nth-child(3) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.shop > div:nth-child(3) > div {
+  float: left;
+}
+.shop > div:nth-child(3) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shop > div:nth-child(3) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shop > div:nth-child(3) {
+  margin-bottom: 0;
+}
+.shop > div:nth-child(1) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shop > div:nth-child(2) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shop > div:nth-child(3) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shop > div:nth-child(1) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shop > div:nth-child(2) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shop > div:nth-child(3) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shoes > div {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.shoes > div:nth-child(1) > img {
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.shoes > div:nth-child(1) > div {
+  float: left;
+}
+.shoes > div:nth-child(1) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shoes > div:nth-child(1) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shoes > div:nth-child(2) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.shoes > div:nth-child(2) > div {
+  float: left;
+}
+.shoes > div:nth-child(2) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shoes > div:nth-child(2) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shoes > div:nth-child(3) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.shoes > div:nth-child(3) > div {
+  float: left;
+}
+.shoes > div:nth-child(3) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.shoes > div:nth-child(3) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.shoes > div:nth-child(3) {
+  margin-bottom: 0;
+}
+.shoes > div:nth-child(1) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shoes > div:nth-child(2) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shoes > div:nth-child(3) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.shoes > div:nth-child(1) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shoes > div:nth-child(2) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shoes > div:nth-child(3) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.clock > div {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.clock > div:nth-child(1) > img {
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.clock > div:nth-child(1) > div {
+  float: left;
+}
+.clock > div:nth-child(1) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.clock > div:nth-child(1) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.clock > div:nth-child(2) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.clock > div:nth-child(2) > div {
+  float: left;
+}
+.clock > div:nth-child(2) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.clock > div:nth-child(2) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.clock > div:nth-child(3) > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px 15px 10px 10px;
+  float: left;
+}
+.clock > div:nth-child(3) > div {
+  float: left;
+}
+.clock > div:nth-child(3) > div > h6 {
+  margin-top: 16px;
+  margin-bottom: 21px;
+}
+.clock > div:nth-child(3) > div > p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+.clock > div:nth-child(3) {
+  margin-bottom: 0;
+}
+.clock > div:nth-child(1) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.clock > div:nth-child(2) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.clock > div:nth-child(3) > div > h6:hover {
+  color: green;
+  cursor: pointer;
+}
+.clock > div:nth-child(1) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.clock > div:nth-child(2) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.clock > div:nth-child(3) > div > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.more-text > h6 {
+  text-align: center;
+}
+.tet-inner > h6 > a {
+  display: block;
+  width: 159px;
+  line-height: 43px;
+  background-color: #3bb18f;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.women-shoes {
+  margin-top: 100px;
+}
+.women-left {
+  background: url(../images/img111111.jpg) no-repeat;
+  width: 898px;
+  -webkit-background-size: 898px 500px;
+  background-size: 898px 500px;
+  padding-bottom: 500px;
+  float: left;
+  position: relative;
+}
+.g-flies {
+  position: absolute;
+  right: 40px;
+  top: 260px;
+}
+.g-flies > h5 {
+  color: #fff;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+.shoes-right {
+  background: url(../images/img22222.png) no-repeat;
+  width: 451px;
+  padding-bottom: 500px;
+  float: left;
+  background-color: #eef1f8;
+  position: relative;
+}
+.g-flies > h6 {
+  text-align: right;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.g-f {
+  position: absolute;
+  top: 80%;
+  left: 38%;
+}
+.g-f > h6 {
+  text-align: center;
+  cursor: pointer;
+}
+.g-f > a {
+  display: block;
+  text-decoration: none;
+  color: green;
+  margin-top: 20px;
+  text-align: center;
+}
+.women-left:hover > .g-flies > h6 {
+  color: green;
+}
+.shoes-right:hover > .g-f > h6 {
+  color: green;
+}
+.blog-news > h5 {
+  color: #000;
+  font-size: 48px;
+  margin-top: 108px;
+  margin-bottom: 37px;
+  text-align: center;
+}
+.blog-news > p {
+  color: #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+.ff-other {
+  margin-top: 57px;
+  margin-bottom: 99px;
+}
+.ff-left {
+  width: 357px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.ff-left > img {
+  display: block;
+  width: 357px;
+  height: 417px;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+.ff-left:hover > img {
+  transform: scale(1, 1);
+}
+.ff-left > div {
+  position: absolute;
+  left: 17%;
+  top: 74%;
+}
+.ff-left > div > h5 {
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.ff-left > div > h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.ff-left > div > p {
+  color: #ccc;
+  cursor: pointer;
+}
+.ff-left:hover > div > h4 {
+  color: green;
+}
+.ff-left > div > p > span:hover {
+  text-decoration: underline;
+}
+.flover {
+  width: 357px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-left: 21px;
+}
+.flover > img {
+  display: block;
+  width: 357px;
+  height: 417px;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+.flover:hover > img {
+  transform: scale(1, 1);
+}
+.flover > div {
+  position: absolute;
+  left: 17%;
+  top: 74%;
+}
+.flover > div > h5 {
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.flover > div > h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.flover > div > p {
+  color: #ccc;
+  cursor: pointer;
+}
+.flover:hover > div > h4 {
+  color: green;
+}
+.flover > div > p > span:hover {
+  text-decoration: underline;
+}
+.eye {
+  width: 357px;
+  overflow: hidden;
+  position: relative;
+  float: right;
+}
+.eye > img {
+  display: block;
+  width: 357px;
+  height: 417px;
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+.eye:hover > img {
+  transform: scale(1, 1);
+}
+.eye > div {
+  position: absolute;
+  left: 17%;
+  top: 74%;
+}
+.eye > div > h5 {
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.eye > div > h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.eye > div > p {
+  color: #ccc;
+  cursor: pointer;
+}
+.eye:hover > div > h4 {
+  color: green;
+}
+.eye > div > p > span:hover {
+  text-decoration: underline;
+}
